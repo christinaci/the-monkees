@@ -251,13 +251,6 @@ button:hover {
     width: 25%;
 }
 
-@media (max-width: 300px) {
-  .submitbtn {
-    width: 100%;
-  }
-  label{
-    display: block;
-  }
 }
 
   
