@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-/*----------------color---------------------------------------------*/
+/*-----------------------------------------fonts---------------------------------------------*/
 body{
 padding:10px 10px 10px 10px;
 	font-family: 'Roboto', sans-serif;
  	background-size: cover;
  	background-color: #F75741;
 }
-
-
-
 
 h1{
 	font-size: 3em;
@@ -29,6 +26,7 @@ p{
     
 }
 
+/*---------------------------------------masthead on every page----------------------------------------*/
 .masthead{
     background-color: #F75741;
     width: 100%;
@@ -37,10 +35,18 @@ p{
     padding-top: 10px;
 }
 
+.logoNav{
+	flex:6;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
 #nav{
     background-color: #E73530;
     height: 60px;
 }
+
 .menuitem{
     height: 60px;
     text-align: center;
@@ -57,7 +63,6 @@ p{
     
     
 }
-.hvr-sweep-to-bottom:hover { color: #000; }
 
 ul{
 	display: flex;
@@ -69,6 +74,7 @@ ul{
 	padding: 0;
 }
 
+ /*------------------------------------footer on every page------------------------------*/
 .social-links {
     padding-bottom: 40px;
      margin: 0 auto;
@@ -79,8 +85,6 @@ ul{
 	text-align: center;
     
 }
-
-
     
 .social-links li a i {
     width: 40px;
@@ -100,7 +104,55 @@ ul{
     -o-transition: all 0.35s ease-in-out;
     
 }
-.section-photos upcomingshows{
+
+.social-links li a i:hover {
+    background: #F99917;
+}
+
+
+/*-----------------------------------------index.html----------------------------------*/
+ .about-videos{
+	flex:1; 
+	background-color: #F75741;
+	display: flex;
+	flex-flow:row wrap;
+	position: relative;
+	justify-content:space-between;
+	padding: 10px 20px 10px 20px;
+	margin: 20px auto;
+	text-align: center;
+    
+    }
+    
+    .vid1{
+        padding:40px 20px 20px 20px;
+    margin: 30px auto;
+    }
+    
+    .vid2{
+        padding:40px 20px 20px 20px;
+    margin: 30px auto;
+    }
+    
+    .about{
+        padding:10px 10px 10px 10px;
+    margin: 20px auto;
+    text-align: center;
+    }
+
+/*--------------------------------------------New Music-------------------------------------*/
+
+   .newvid1{
+      padding:0px 20px 20px 20px;
+    }
+    
+    .newvid2{
+      padding:0px 20px 20px 20px;
+    }
+
+
+/*------------------------------------------Upcoming shows--------------------------------*/
+.upcomingshows{
     justify-content: space-between;
     padding: 10px 10px 10px 10px;
     list-style-type: none;
@@ -108,9 +160,11 @@ ul{
     text-align: left;
 }
 
-.social-links li a i:hover {
-    background: #F99917;
+.showimage{
+  padding: 10px 10px 10px 10px;
 }
+
+
 input.MyButton {
 align-items: center;
 text-align: center;
@@ -134,56 +188,11 @@ border: 1px solid #fff;
 }
 
 
-
-.logoNav{
-	flex:6;
-	text-align: center;
-	font-size: 2em;
-	font-weight: bold;
-}
+/*------------------------------------------Contact--------------------------------------*/
 
 
-    
-    .about-videos{
-	flex:1; 
-	background-color: #F75741;
-	display: flex;
-	flex-flow:row wrap;
-	position: relative;
-	justify-content:space-between;
-	padding: 10px 20px 10px 20px;
-	margin: 20px auto;
-	text-align: center;
-    
-    }
-    
-    .vid1{
-        padding:40px 10px 10px 10px;
-    margin: 30px auto;
-    }
-    
-    .vid2{
-        padding:40px 10px 10px 10px;
-    margin: 30px auto;
-    }
-    
-    .about{
-        padding:10px 10px 10px 10px;
-    margin: 20px auto;
-    text-align: center;
-        
-  
-    
-@media(min-width: 700px) {
-.logoNav{
-    font-size: 1em;
-}
-.social-links{
-    position: relative;
-    display: block;
-}
 input[type=text]{
-  width: 100%;
+  width: 30%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -196,9 +205,6 @@ input[type=text]:focus {
   outline: none;
 }
 
-
-
-/* Set a style for all buttons */
 button {
   background-color: #4CAF50;
   color: white;
@@ -206,7 +212,7 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 25%;
   opacity: 0.9;
 }
 
@@ -219,8 +225,6 @@ button:hover {
 
 }
 
-
-/* Add padding to container elements */
 .container {
   padding: 16px;
 }
@@ -230,15 +234,24 @@ button:hover {
   font-size: 1em;
 }
 
-/* Clear floats */
+
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
+/*--------------------------------------------media quiries-----------------------*/
+
+@media(min-width: 700px) {
+.logoNav{
+    font-size: 1em;
+}
+.coverphoto{
+    width: 25%;
+}
+
+@media (max-width: 300px) {
   .submitbtn {
     width: 100%;
   }
@@ -246,49 +259,6 @@ button:hover {
     display: block;
   }
 }
-@media screen and (max-width: 700px){
-  .coverphoto{
-    width: 25%;
-}
-}
 
-/*header{
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    background-color: green;
-    width: 100%;
-    
-    li{
-	flex:1;
-	flex-flow: row;
-	justify-content: space-between;
-	height: 20px;
-	width:10%;
-	display: flex;
-	border:0px solid #000;
-	background-color: #81BBC9;
-	border-radius: 10px;
-	font-family: Dosis;
-	padding:0px;
-	text-align: center;
-	font-size: 1.3em;
-	align-items: center;
-	
-	.nav a {
-  float: none;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 8px 8px;
-  text-decoration: none;
-}
-/* Change background on mouse-over
-.nav a:hover {
-  background: #ddd;
-  color: black;
   
-  
-  .menuitem hvr-sweep-to-bottom:before{
-    background: RGBA(0, 0, 0, 0.2);
-    height: 120px;
-*/
+
