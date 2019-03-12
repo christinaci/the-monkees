@@ -6,7 +6,7 @@
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>The Monkeys</title>
+        <title>The Monkees</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" type="text/css" />
@@ -14,42 +14,86 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css"/>
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
         <meta name="viewport" content="width=device-width, initial-scale-1">
+        </head>
     
-    </head>
-    <body>
+           <body>
+               
         <!-- Masthead -->
-    <div class="masthead text-white text-center">
-        <div class="row">
+    <div class="masthead">
+        <div class="container-fluid">
+            <div class="row">
             <a href="index.html">
-          <div class="container-fluid">
-            <div class="logoNav">
+          
+                
+                    
+                    <div class="logoNav">
                 <h1>The Monkees</h1>
                 </a>
-          </div>
-          </div>
-          </div>
-          </header>
-          <nav>
-              <div class="row">
-                    <ul id= "nav" class= "list-inline clearfix container-fluid">
-                    <li class="col-xs-6 col-sm-3 ul-menu-color-meet menuitem">
-                        <a href="index.html" class="hvr-sweep-to-bottom"><span>Home</span></a>
+                </div>
+                <ul id= "nav" class= "list-inline clearfix container-fluid">
+                    <li class="col-xs-6 col-sm-3 menuitem">
+                        <a href="index.html"><span>Home</span></a>
                     </li>
-                    <li class="col-xs-6 col-sm-3 ul-menu-color-videos menuitem">
-                        <a href="meet.html" class="hvr-sweep-to-bottom"><span>Meet the band</span></a>
+                    <li class="col-xs-6 col-sm-3 menuitem">
+                        <a href="newmusic.html"><span>New music</span></a>
                     </li>
-                    <li class="col-xs-6 col-sm-3 ul-menu-color-videos menuitem">
-                        <a href="videos.html" class="hvr-sweep-to-bottom"><span>Videos</span></a>
+                    <li class="col-xs-6 col-sm-3 menuitem">
+                        <a href="upcomingshows.html"><span>Upcoming shows</span></a>
                     </li>
-                    <li class="col-xs-6 col-sm-3 ul-menu-color-audio menuitem">
-                        <a href="audio.html" class="hvr-sweep-to-bottom"><span>Audio</span></a>
+                    <li class="col-xs-6 col-sm-3 menuitem">
+                        <a href="contact.html"><span>Contact us</span></a>
                     </li>
-                    <li class="col-xs-6 col-sm-3 ul-menu-color-contact menuitem">
-                        <a href="contact.html" class="hvr-sweep-to-bottom"><span>Contact</span></a>
-                    </li>
-                    <li class="col-xs-6 col-sm-3 ul-menu-color-reviews menuitem">
-                        <a href="reviews.html" class="hvr-sweep-to-bottom"><span>Reviews</span></a>
-                    </li></ul>
+                    </ul>
                     </nav>
+          </div>
+          </div>
+          </div>
+        <form action="action_page.php">
+  <div class="container">
+    <h1>Available for events and special occassions</h1>
+    <p>For booking enquiries please contact <b>bookings@themonkees.com</b>. Alternatively, you can submit your information below and we'll get back to you as soon as we possibly can!</p>
+    <div class= "coverphoto">
+        <img src="assets/images/cover-image.jpg"></img>
+
+    </div><br>
+
+    <label for="email"><b>Email: </b></label>
+    <input type="text" placeholder="Enter Email" name="email" required> <br>
+    
+     <label for="country"><b>Region: </b></label>
+    <select id="country" name="country">
+        <option value="Africa">Africa</option>
+      <option value="North America">North America</option>
+      <option value="South America">South America</option>
+      <option value="Asia">Asia</option>
+      <option value="Australia">Australia</option>
+      <option value="Europe">Europe</option>
+    </select><br>
+    
+    <label for="message"><b>Date of event: </b></label>
+    <input type="date" placeholder="Date" name="date" required><br>
+    
+<div class="clearfix">
+      <button type="submit" class="submitbtn">Submit</button>
+    </div><br>
+    <p>By pressing submit you agree to our <a href="https://www.monkees.com/terms-use" style="color:dodgerblue">Terms & Privacy</a>.</p>
+  </div>
+</form><br>
+          
+          <footer>
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 col-md-4 col-xl-4">
+                <ul class="social-links">
+                        <li><a target="_blank" href="#"><i class=" fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="#"><i class=" fa fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="#"><i class=" fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="#"><i class=" fa fa-youtube"></i></a></li>
+                        <li><a target="_blank" href="#"><i class=" fa fa-soundcloud"></i></a></li>
+                    </ul>
                     </div>
                     </div>
+                    </div>
+        </footer>
+        </body>
+        </html>
